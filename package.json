@@ -1,0 +1,42 @@
+{
+  "name": "t2s",
+  "version": "1.0.0",
+  "description": "A tools for send clipboard text to focus.",
+  "main": "./lib/t2s.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "ffi": "^2.1.0",
+    "ref-array": "^1.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xingxiudong/t2s.git"
+  },
+  "keywords": [
+    "focus",
+	"input",
+	"",
+    "clipbord",
+	"ffi",
+	"user32",
+	"sendInput",
+	"copy",
+	"paste"
+  ],
+  "author": {
+    "name": "XiuDong Xing",
+    "email": "xingxiudong@gmail.com",
+    "url": "http://xingxiudong.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xingxiudong/t2s/issues"
+  },
+  "homepage": "https://github.com/xingxiudong/t2s#readme"
+}

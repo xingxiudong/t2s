@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title> new document </title>
+  <meta name="generator" content="editplus" />
+  <meta name="author" content="" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+ </head>
+
+ <body>
+  <script type="text/javascript">
+  <!--
+	var run = true;
+ 
+	setInterval(function(){
+		if (run)
+		{	
+			var txt = Math.floor(Math.random() * 1000);
+			document.body.innerHTML = txt + " | ";
+			copy();
+		}
+	}, 500);
+
+  //-->
+
+  function copy(){  
+    if(window.clipboardData){ // 仅IE支持此对象，firefox、chrome不支持  
+        //1、通过clipboardData对象实现复制  
+        //window.clipboardData.clearData();  
+        //window.clipboardData.setData("Text",txtObj.value);  
+          
+        //2、通过document对象实现复制:先选择中文本，再执行复制命令  
+        //txtObj.select();  
+        //document.execCommand("Copy"); // 仅IE支持，Firefox报语法错误，chrome执行结果返回false(不支持)  
+          
+        //3、通过TextRange对象实现现复制：可以不用先选中内容  
+        document.body.createTextRange().execCommand("Copy");
+    }  
+}  
+  </script>
+ </body>
+</html>
